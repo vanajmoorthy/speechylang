@@ -1,3 +1,5 @@
+// sm0l bit of regex to evaluate what the character is
+
 const LETTER = /[a-zA-Z]/;
 const WHITESPACE = /\s+/;
 const NUMBER = /^[0-9]+$/;
@@ -14,19 +16,19 @@ const isOpeningParenthesis = character => character === '(';
 const isClosingParenthesis = character => character === ')';
 
 const isParenthesis = character =>
-  isOpeningParenthesis(character) || isClosingParenthesis(character);
+    isOpeningParenthesis(character) || isClosingParenthesis(character);
 
 const isQuote = character => character === '"';
 
 const isOperator = character => OPERATORS.includes(character);
 
 module.exports = {
-  isLetter,
-  isWhitespace,
-  isNumber,
-  isOpeningParenthesis,
-  isClosingParenthesis,
-  isParenthesis,
-  isQuote,
-  isOperator,
+    isLetter,
+    isWhitespace,
+    isNumber,
+    isOpeningParenthesis,
+    isClosingParenthesis,
+    isParenthesis,
+    isQuote,
+    isOperator,
 };
