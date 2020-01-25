@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "dropbear": "bin/dropbear"
+    "speechy": "bin/speechy"
   },
   "scripts": {
     "start": "node src/repl.js",
     "test": "jest"
   },
   "keywords": [],
-  "author": "Vanaj Moorthy  ",
+  "author": "Vanaj Moorthy",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.4.5",
