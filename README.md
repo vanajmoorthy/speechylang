@@ -43,3 +43,4 @@ The Speechy standard library is incredibly small at the moment and consist of th
 * min: `min(2 3 4)`
 * percentage: `(percentage 5 100)`
 
+Contact me at vanajmoorthy@gmail.com or file an issue if you notice anything wrong.

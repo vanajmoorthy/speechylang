@@ -1,5 +1,5 @@
 {
-  "name": "speechy",
+  "name": "speechylang",
   "version": "0.0.1",
   "description": "A LISP style programming language that compiles to JavaScript.",
   "main": "index.js",
