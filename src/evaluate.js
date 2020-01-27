@@ -13,11 +13,16 @@ const apply = node => {
 };
 
 const getIdentifier = node => {
-    if (environment[node.name]) return environment[node.name];
-    throw new ReferenceError(`${node.name} is not defined`);
+	if (environment[node.name]) return environment[node.name];
+	throw new ReferenceError(`${node.name} is not defined`);
+};
+
+const letVariable = node => {
+	environment[node.identifier.name] = node.assignment.value;
 };
 
 const evaluate = node => {
+	if (node.type === "VariableDeclaration") return letVariable(node);
 	if (node.type === "CallExpression") return apply(node);
 	if (node.type === "Identifier") return getIdentifier(node);
 	if (node.value) return node.value;
