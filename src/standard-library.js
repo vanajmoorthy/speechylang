@@ -11,6 +11,7 @@ const max = (...args) => {
 const min = (...args) => {
 	return Math.min(...args);
 };
+const percentage = all((a, b) => (a / 100) * b);
 const log = console.log;
 
 const environment = {
@@ -22,7 +23,8 @@ const environment = {
 	log,
 	pi: Math.PI,
 	max,
-	min
+	min,
+	percentage
 };
 
 module.exports = { environment };
