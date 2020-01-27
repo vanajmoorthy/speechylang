@@ -27,7 +27,13 @@ const repl = async () => {
 };
 
 if (require.main === module) {
-	console.log(chalk.red(`Welcome to ${chalk.underline("Speechy")}. Enter your command below.`));
+	console.log(
+		chalk.blue(
+			`Welcome to ${chalk.underline(
+				"Speechy"
+			)}. Enter your command below.`
+		)
+	);
 	repl();
 }
 

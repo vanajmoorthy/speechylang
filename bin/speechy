@@ -1,22 +1,30 @@
 #!/usr/bin/env node
 
-const { parseAndEvaluate } = require('../src');
+const { parseAndEvaluate } = require("../src");
 
-const fs = require('fs');
+const fs = require("fs");
+const chalk = require("chalk");
 
 const [command, ...args] = process.argv.slice(2);
 
 if (!command) {
-  const repl = require('../src/repl');
-  return repl();
+	const repl = require("../src/repl");
+	console.log(
+		chalk.blue(
+			`Welcome to ${chalk.underline(
+				"Speechy"
+			)}. Enter your command below.`
+		)
+	);
+	return repl();
 }
 
-if (command.toLowerCase() === 'run') {
-  fs.readFile(args[0], 'utf-8', (error, file) => {
-    if (error) {
-      console.error(error);
-    }
-    const result = parseAndEvaluate(file);
-    console.log(result);
-  });
+if (command.toLowerCase() === "run") {
+	fs.readFile(args[0], "utf-8", (error, file) => {
+		if (error) {
+			console.error(error);
+		}
+		const result = parseAndEvaluate(file);
+		console.log(result);
+	});
 }
