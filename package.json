@@ -1,7 +1,7 @@
 {
   "name": "speechy",
   "version": "0.0.1",
-  "description": "",
+  "description": "A LISP style programming language that compiles to JavaScript.",
   "main": "index.js",
   "bin": {
     "speechy": "bin/speechy"
