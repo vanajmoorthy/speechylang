@@ -4,6 +4,13 @@
 
 ### *Installation*
 
+You can install Speech from npm using the command
+
+`npm install speechylang` or `npm install speechylang -g`
+
+You can start the REPL by using the command `speechy` and run speechy files using `speechy run path/to/file/example.spy`
+
+(Keep in mind that speechy files use the .spy extension).
 
 
 ### *Basic Overview*
