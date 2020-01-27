@@ -5,6 +5,7 @@ const pipe = (...funcs) => value =>
 
 const log = value => tap(value, console.log);
 
+
 const peek = array => array[0];
 const pop = array => array.shift();
 
