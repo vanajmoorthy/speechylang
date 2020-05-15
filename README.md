@@ -1,4 +1,4 @@
-# Speechy
+# Speechy 🐢
 
 #### Speechy is a small LISP style programming language what uses Babel as an AST and transpiles to JavaScript.
 
