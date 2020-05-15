@@ -1,4 +1,1 @@
-(
-    log "hi" (add (percentage 5 4) (multiply 4 5)) (log "hello again")
-)
-
+(sqrt 2)

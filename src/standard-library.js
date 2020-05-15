@@ -1,10 +1,12 @@
-const all = fn => (...list) => list.reduce(fn);
+const all = (fn) => (...list) => list.reduce(fn);
 
 const add = all((a, b) => a + b);
 const subtract = all((a, b) => a - b);
 const multiply = all((a, b) => a * b);
 const divide = all((a, b) => a / b);
 const modulo = all((a, b) => a % b);
+const sqrt = (a) => Math.sqrt(a);
+const pow = all((a, b) => Math.pow(a, b));
 const max = (...args) => {
 	return Math.max(...args);
 };
@@ -22,9 +24,11 @@ const environment = {
 	modulo,
 	log,
 	pi: Math.PI,
+	sqrt,
 	max,
 	min,
-	percentage
+	percentage,
+	pow,
 };
 
 module.exports = { environment };
