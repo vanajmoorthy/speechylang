@@ -1,6 +1,6 @@
 {
   "name": "speechylang",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A LISP style programming language that compiles to JavaScript.",
   "main": "index.js",
   "bin": {

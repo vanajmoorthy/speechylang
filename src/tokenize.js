@@ -2,6 +2,7 @@ const {
     isLetter,
     isWhitespace,
     isNumber,
+    // isFullStop,
     isParenthesis,
     isQuote,
 } = require('./identify');
@@ -30,6 +31,8 @@ const tokenize = input => {
         if (isNumber(character)) {
             let number = character;
 
+            // isNumber(input[++cursor]) || isFullStop(input[++cursor])
+            // isNumber(input[++cursor]) || input[++cursor] === "."
             while(isNumber(input[++cursor])) {
               number += input[cursor];
             }
