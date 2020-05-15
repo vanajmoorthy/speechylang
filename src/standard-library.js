@@ -5,7 +5,7 @@ const subtract = all((a, b) => a - b);
 const multiply = all((a, b) => a * b);
 const divide = all((a, b) => a / b);
 const modulo = all((a, b) => a % b);
-const sqroot = (a) => Math.sqrt(a);
+const root = (a) => Math.sqrt(a);
 const pow = all((a, b) => Math.pow(a, b));
 const max = (...args) => {
 	return Math.max(...args);
@@ -24,7 +24,7 @@ const environment = {
 	modulo,
 	log,
 	pi: Math.PI,
-	sqroot,
+	root,
 	max,
 	min,
 	percentage,
